@@ -1,0 +1,37 @@
+Pandas
+df = pd.read_csv('df/Kaub_Level_Since_2013.csv') => Load dfset from csv
+df.to_csv('') => Save DataFrameto csv
+
+pd.read_excel('file.xlsx') => Read file from read_excel
+df.to_excel('dir/file.xlsx') => Write file as xlsx file
+
+data = {'Country': ['Belgium', Germany], 'Capital': ['Brussels', 'Berlin']} => Construct Datframe from dict
+df = pd.DataFrame(data, columns=['Country', 'Capital'])
+
+df[2] => Get DataFrame from row 2 to row n (slow)
+
+df.iat([0], [0]) => Get a single value by row and column
+
+df.loc[2:] => Get DataFrame from row 2 to row n (fast)
+
+df.loc[[0,1,2,3]] => Get DataFrame from rows 0 to 3
+
+
+df.iloc[[0], [0]] => Select single value by row and column
+
+
+df.rename({'gdp':'log(gdp)'}, axis=1) => Rename data
+
+df = df.drop('Country', axis=1) => Drop data
+
+df = df.sort_index() => Sort by index
+
+df = df.sort_values(by='Country') => Sort values by column
+
+df = df[df['level'] > 200] => Get only rows where level > 200
+
+df['month'] = pd.DatetimeIndex(df['date']).month_name() => Make a new column 'month' and add the month names to the dfframe depending on the column ['date'], 'date' has format 2013-01-01
+
+result = df.groupby('month').agg({'level':np.median}).reset_index() => Group by month and calculate median of level column, then reset index
+
+quantile1, quantile3 = df['level'].quantile([0.25, 0.75]) => 25% and 75% quantile of the distribution in the column level
