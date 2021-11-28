@@ -1,0 +1,33 @@
+- Single Time Step prediction is enough?
+
+- Can I use additional data?
+
+- Standardization or Normalization? 
+    - Standardization: Rescales values, s.t. mean=0 and std=1
+        - Assumes Gaussian distribution
+    - Normalization: Rescaling values to [0,1], not as robust
+        - Acceptable to use max and min of training data?
+
+- Can Reinforcement Learning be used for anything relevant in the job field? (self driving cars)
+
+- Can he show us how he worked his way through this problem?
+
+- Handin as jupyter notebook okay?
+
+Try to explain a nice story.
+
+--------------------------------------------------------------------
+- How do I compare the effect of different normalization/standardization options on the model since the mean absolute error is depending on it?
+
+- Sarima really closely models the graph even though it is non-constrained (or whatever the right word for that is)
+=> Plan Forward: 
+    - Get the proper prediction for LSTM working
+    - Get the GRU stuff going (low priority)
+    - Get a nice comparison between each individual method
+    - Maybe extend the data?
+
+
+Less weights
+Other data
+More dropout? Maybe try feedforward
+20 mins presentation
