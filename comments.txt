@@ -20,14 +20,14 @@ Try to explain a nice story.
 - How do I compare the effect of different normalization/standardization options on the model since the mean absolute error is depending on it?
 
 - Sarima really closely models the graph even though it is non-constrained (or whatever the right word for that is)
+
 => Plan Forward: 
     - Get the proper prediction for LSTM working
     - Get the GRU stuff going (low priority)
     - Get a nice comparison between each individual method
-    - Maybe extend the data?
+    - Shift the data for precipitation because precipication takes time to have effects on the water levels
+    - Use other precipication levels in other cities and shift it accordingly => Freiburg, Basel
+    - Use snow levels in the alps and shift it accordingly
+    - Use temperature with a hugle shift/lag
 
-
-Less weights
-Other data
-More dropout? Maybe try feedforward
 20 mins presentation
