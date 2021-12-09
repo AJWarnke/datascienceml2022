@@ -21,13 +21,25 @@ Try to explain a nice story.
 
 - Sarima really closely models the graph even though it is non-constrained (or whatever the right word for that is)
 
-=> Plan Forward: 
+=> Plan Forward:
     - Get the proper prediction for LSTM working
     - Get the GRU stuff going (low priority)
     - Get a nice comparison between each individual method
-    - Shift the data for precipitation because precipication takes time to have effects on the water levels
-    - Use other precipication levels in other cities and shift it accordingly => Freiburg, Basel
+    - Shift the data for precipitation because precipitation takes time to have effects on the water levels
+    - Use other precipitation levels in other cities and shift it accordingly => Freiburg, Basel
     - Use snow levels in the alps and shift it accordingly
-    - Use temperature with a hugle shift/lag
+    - Use temperature with a huge shift/lag
 
 20 mins presentation
+
+TODO: Apply different normalization of data for each column!
+TODO: Get a nice comparison between each individual method
+TODO: Shift the data for precipitation because precipitation takes time to have effects on the water levels
+TODO: Use other precipitation levels in other cities and shift it accordingly => Freiburg, Basel
+TODO: Use snow levels in the alps and shift it accordingly
+TODO: Use temperature with a huge shift/lag
+TODO: Make SARIMA prediction for future and make comparable prediction to LSTM
+TODO: Plot the different cross correlations for temperature shifting.
+TODO: Comparison between sarima and lstm models.
+
+Write down what I've done
