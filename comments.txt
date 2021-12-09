@@ -32,7 +32,9 @@ Try to explain a nice story.
 
 20 mins presentation
 
+TODO: Look now how the shifting is working!
 TODO: Apply different normalization of data for each column!
+TODO: Delete the file 122212342.csv
 TODO: Get a nice comparison between each individual method
 TODO: Shift the data for precipitation because precipitation takes time to have effects on the water levels
 TODO: Use other precipitation levels in other cities and shift it accordingly => Freiburg, Basel
@@ -41,5 +43,10 @@ TODO: Use temperature with a huge shift/lag
 TODO: Make SARIMA prediction for future and make comparable prediction to LSTM
 TODO: Plot the different cross correlations for temperature shifting.
 TODO: Comparison between sarima and lstm models.
+TODO: Make differences in models and compare them
 
-Write down what I've done
+Write down what I've done:
+
+Questions:
+    1. Why is the correlation between precipitation and water level so low? (0.05 with pearson, 0.08 with spearman)
+    2. Ask again if I really should predict 7 days at once?
