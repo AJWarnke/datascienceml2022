@@ -1,0 +1,93 @@
+Experiment 1 Basis:
+    Original Data
+    Random Shuffle: No
+    Data: Level Precipitation_Mannheim
+    Shift Level Precipitation_Mannheim: None
+    Split: 0.7 0.2 0.1
+    Scaling: Robust Scaler
+    Window: 30 30 7
+    Loss: Huber
+    Optimizer: Adam
+    Metrics: Mean Absolute Error
+    Max Epochs: 200
+    Early Stopping: Yes
+    Architecture LSTM
+                 _________________________________________________________________
+                  Layer (type)                Output Shape              Param #
+                 =================================================================
+                  lstm_6 (LSTM)               (None, 30, 6)             216
+
+                  lstm_7 (LSTM)               (None, 30, 4)             176
+
+                  dense_12 (Dense)            (None, 30, 1)             5
+
+                 =================================================================
+                 Total params: 397
+                 Trainable params: 397
+                 Non-trainable params: 0
+                 _________________________________________________________________
+    Architecture Feed Forward Network
+                  _________________________________________________________________
+                  Layer (type)                Output Shape              Param #
+                 =================================================================
+                  dense_13 (Dense)            (None, 30, 6)             18
+
+                  dense_14 (Dense)            (None, 30, 4)             28
+
+                  dense_15 (Dense)            (None, 30, 1)             5
+
+                 =================================================================
+                 Total params: 51
+                 Trainable params: 51
+                 Non-trainable params: 0
+                 _________________________________________________________________
+    Performance: LSTM: Train: 0.36, Validation: 0.36, Test: 0.46
+                 Baseline: Train: 0.41, Validation: 0.39, Test: 0.52
+                 Dense: Train: 0.38, Validation: 0.35, Test: 0.45
+
+Experiment 2 Change Split:
+    Original Data
+    Random Shuffle: No
+    Data: Level Precipitation_Mannheim
+    Shift Level Precipitation_Mannheim: None
+    Split: 0.8 0.1 0.1
+    Scaling: Robust Scaler
+    Window: 30 30 7
+    Loss: Huber
+    Optimizer: Adam
+    Metrics: Mean Absolute Error
+    Max Epochs: 200
+    Early Stopping: Yes
+    Architecture LSTM
+                 _________________________________________________________________
+                  Layer (type)                Output Shape              Param #
+                 =================================================================
+                  lstm_6 (LSTM)               (None, 30, 6)             216
+
+                  lstm_7 (LSTM)               (None, 30, 4)             176
+
+                  dense_12 (Dense)            (None, 30, 1)             5
+
+                 =================================================================
+                 Total params: 397
+                 Trainable params: 397
+                 Non-trainable params: 0
+                 _________________________________________________________________
+    Architecture Feed Forward Network
+                  _________________________________________________________________
+                  Layer (type)                Output Shape              Param #
+                 =================================================================
+                  dense_13 (Dense)            (None, 30, 6)             18
+
+                  dense_14 (Dense)            (None, 30, 4)             28
+
+                  dense_15 (Dense)            (None, 30, 1)             5
+
+                 =================================================================
+                 Total params: 51
+                 Trainable params: 51
+                 Non-trainable params: 0
+                 _________________________________________________________________
+    Performance: LSTM: Train: 0.36, Validation: 0.36, Test: 0.46
+                 Baseline: Train: 0.41, Validation: 0.39, Test: 0.52
+                 Dense: Train: 0.38, Validation: 0.35, Test: 0.45
